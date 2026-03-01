@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-MyPluginModule::Engine.routes.draw do
-  get "/examples" => "examples#index"
-  # define routes here
+RedirectAfterActivation::Engine.routes.draw do
+  # No custom routes needed - this plugin hooks into core's activation flow
 end
 
-Discourse::Application.routes.draw { mount ::MyPluginModule::Engine, at: "my-plugin" }
+Discourse::Application.routes.draw do
+  mount ::RedirectAfterActivation::Engine, at: "redirect-after-activation"
+end

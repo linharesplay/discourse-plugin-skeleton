@@ -1,4 +1,7 @@
-TODO_plugin_name:
-  plugin_name_enabled:
+plugins:
+  redirect_after_activation_enabled:
     default: false
     client: true
+  redirect_after_activation_url:
+    default: ""
+    client: false
