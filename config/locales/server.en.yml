@@ -1,4 +1,4 @@
 en:
   site_settings:
-    redirect_after_activation_enabled: "Enable redirect after account activation"
-    redirect_after_activation_url: "URL to redirect users to after account activation (e.g. https://example.com/welcome)"
+    redirect_after_activation_enabled: "Enable redirect after new account activation (works with email confirmation, OAuth providers, and admin approval)"
+    redirect_after_activation_url: "URL to redirect new users to after account activation (e.g. https://example.com/welcome or /welcome). Works for all signup methods including Google, Discord, GitHub, Steam, and Microsoft."
